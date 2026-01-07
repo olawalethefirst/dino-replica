@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Chrome Dino Replica
 
-## Getting Started
+## What the app is
+Chrome Dino Replica is a browser-based clone of the classic offline Chrome dinosaur runner game, built as a small interactive web app.
 
-First, run the development server:
+## How it was built
+- Built as a Next.js app using the App Router.
+- UI is styled with Tailwind CSS.
+- Game logic and UI are implemented in client components for immediate interactivity.
+- Development is assisted by AI agents with project-specific rules for consistency and quality.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Framework used
+- Next.js (React + App Router)
+- Tailwind CSS for styling
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## AI agents in development
+- Project instructions for AI agents live in `agents.md` and are treated as the source of truth.
+- AI agents follow constraints like client-only components, Tailwind-only styling, and tests for every feature.
+- Workflow automation is enforced via Husky pre-commit hooks to run linting and tests.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Run locally
+1. Install dependencies:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+   ```bash
+   npm install
+   ```
 
-## Learn More
+2. Start the development server:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   npm run dev
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. Open `http://localhost:3000` in your browser.
